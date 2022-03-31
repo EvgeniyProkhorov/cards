@@ -10,21 +10,21 @@ import {Registration} from "./Components/Registration/Registration";
 import {TestComponent} from "./Components/TestComponent/TestComponent";
 
 function App() {
-  return (
-      <HashRouter>
+    return (
         <div className="App">
-          <Routes>
-              <Route path={'/login'} element={<Login/>}/>
-              <Route path={'/new-password'} element={<NewPassword/>}/>
-              <Route path={'*'} element={<PageNotFound/>}/>
-              <Route path={'/pass-recovery'} element={<PasswordRecovery/>}/>
-              <Route path={'/profile'} element={<Profile/>}/>
-              <Route path={'/registration'} element={<Registration/>}/>
-              <Route path={'/test-components'} element={<TestComponent/>}/>
-          </Routes>
+            <HashRouter>
+                <Routes>
+                    <Route path={'/login'} element={<Login/>}/>
+                    <Route path={'/new-password'} element={<NewPassword/>}/>
+                    <Route path={'*'} element={<PageNotFound/>}/>
+                    <Route path={'/pass-recovery'} element={<PasswordRecovery/>}/>
+                    <Route path={'/profile'} element={<Profile/>}/>
+                    <Route path={'/registration'} element={<Registration/>}/>
+                    <Route path={'/test-components'} element={<TestComponent/>}/>
+                </Routes>
+            </HashRouter>
         </div>
-      </HashRouter>
-  );
+    );
 }
 
 export default App;
