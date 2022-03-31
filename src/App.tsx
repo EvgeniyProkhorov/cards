@@ -14,13 +14,13 @@ function App() {
       <HashRouter>
         <div className="App">
           <Routes>
-              <Route path={'login'} element={<Login/>}/>
-              <Route path={'new-password'} element={<NewPassword/>}/>
+              <Route path={'/login'} element={<Login/>}/>
+              <Route path={'/new-password'} element={<NewPassword/>}/>
               <Route path={'*'} element={<PageNotFound/>}/>
-              <Route path={'pass-recovery'} element={<PasswordRecovery/>}/>
-              <Route path={'profile'} element={<Profile/>}/>
-              <Route path={'registration'} element={<Registration/>}/>
-              <Route path={'test-components'} element={<TestComponent/>}/>
+              <Route path={'/pass-recovery'} element={<PasswordRecovery/>}/>
+              <Route path={'/profile'} element={<Profile/>}/>
+              <Route path={'/registration'} element={<Registration/>}/>
+              <Route path={'/test-components'} element={<TestComponent/>}/>
           </Routes>
         </div>
       </HashRouter>
