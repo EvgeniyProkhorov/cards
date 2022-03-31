@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NewPasswordIput = () => {
+export const NewPassword = () => {
     return(
         <div>
             New Password
