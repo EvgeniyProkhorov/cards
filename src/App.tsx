@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import {Login} from "./Components/Login/Login";
 import {NewPassword} from "./Components/NewPasswordInput/NewPasswordIput";
 import {PageNotFound} from "./Components/PageNotFound/PageNotFound";
@@ -11,7 +11,7 @@ import {TestComponent} from "./Components/TestComponent/TestComponent";
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <Routes>
               <Route path={'login'} element={<Login/>}/>
@@ -23,7 +23,7 @@ function App() {
               <Route path={'test-components'} element={<TestComponent/>}/>
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
